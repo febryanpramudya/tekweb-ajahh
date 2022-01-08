@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to display the Celsius to Fahrenheit</p>
+    <p id="demo"></p>
+    <input type="text" id="inp" value=" " />
+    <br> </br>
+    <button onclick="toFahrenheit()">Conversion</button><br>
+</body>
+<!--syntax input digunakan untuk menginput suhu yang akan di conversion-->
+<!--buat perintah button dan sambungkan delama function agar ketika di tekan muncul function yang telah di buat-->
+<script>
+    function toFahrenheit() {
+        let celsius = document.getElementById("inp").value;
+        let fahrenheit = (celsius * 9 / 5) + 32;
+        document.getElementById("demo").innerHTML = fahrenheit + "°F";
+    }
+</script>
+<!--fungsi function sama halnya pada latihan 2-->
+</body>
+</html>
